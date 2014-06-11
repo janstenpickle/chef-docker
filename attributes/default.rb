@@ -66,7 +66,7 @@ default['docker']['package']['repo_url'] = value_for_platform(
     'default' => 'https://get.docker.io/ubuntu'
   },
   'ubuntu' => {
-    %w(12.04 12.10 13.04 13.10) => 'https://get.docker.io/ubuntu',
+    %w(12.04 12.10 13.04 13.10 14.04) => 'https://get.docker.io/ubuntu',
     'default' => nil
   },
   'default' => nil
