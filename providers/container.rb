@@ -330,7 +330,8 @@ def run
     'user' => new_resource.user,
     'volume' => Array(new_resource.volume),
     'volumes-from' => new_resource.volumes_from,
-    'workdir' => new_resource.working_directory
+    'workdir' => new_resource.working_directory,
+    'net' => new_resource.net
   )
   dr = docker_cmd!("run #{run_args} #{new_resource.image} #{new_resource.command}")
   dr.error!
